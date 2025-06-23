@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.contenedor {
+  width: 320px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+img.principal {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.texto-negrita {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Inputs base */
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  color: gray;
+  box-sizing: border-box;
+}
+
+/* Input con texto fijo a la derecha */
+.input-con-anexo {
+  width: 100%;
+  position: relative;
+
+}
+
+.input-con-anexo input {
+  width: 100%;
+  padding: 10px;
+  padding-right: 60px;
+  font-size: 14px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  color: gray;
+  box-sizing: border-box;
+}
+
+.input-con-anexo span {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 13px;
+  color: #333;
+  pointer-events: none;
+}
+
+.fila-punto {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.punto-btn {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: transparent;
+}
+
+.punto-btn.activo {
+  background-color: black;
+  color: white;
+}
+
+.texto-izquierda {
+  font-size: 14px;
+  color: #333;
+}
+
+.boton {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.boton:hover {
+  background-color: #0056b3;
+}
+
+.texto-final {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.texto-final-pequeño {
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.imagenes-finales {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.imagenes-finales img {
+  width: 80px;
+  height: auto;
+  border-radius: 5px;
+}
