@@ -1,0 +1,206 @@
+/* COMIENZO */
+.seccion-comienzo {
+  display: grid;
+  gap: 20px;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+
+}
+
+.titulo-comienzo {
+  font-size: 32px;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 700;
+  text-align: left;
+  color: #2C2C2C;
+  font-size: 39px;
+    margin-bottom: 0px;
+}
+
+.texto-comienzo {
+  font-size: 18px;
+  color: #2C2C2C;
+  font-family: 'Overpass', sans-serif;
+  max-width: 800px;
+  text-align: left;
+  margin-top: 0px;
+    font-weight: bold;
+
+}
+
+.imagen-comienzo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  justify-self: center;
+}
+
+/* TOP */
+.top {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  max-width: 100%;
+  margin: 0;
+  padding: 0 130px;
+  margin: 0;
+
+}
+
+/* TITULO 1 */
+.titulo-central {
+  display: grid;
+  place-items: center;
+  padding: 10px 20px;
+  margin-top: 30px;
+  position: relative;
+  overflow: visible;
+}
+
+.titulo-central::before,
+.titulo-central::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background: #E8FF67;
+  inset: 0 -9999px;
+  /* top/bottom 0, left/right expandido */
+  z-index: -1;
+}
+
+
+.titulo-central::after {
+  bottom: 0;
+  top: auto;
+}
+
+.texto-central {
+  color: #2C2C2C;
+  font-weight: 500;
+  font-size: 30px;
+  font-family: 'Overpass', sans-serif;
+
+}
+
+
+/* TITULO 2 Y TODO SU CONTENIDO */
+.titulo {
+  background-color: #ed51fb;
+  color: white;
+  font-weight: bold;
+  padding: 6px 20px;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 30px;
+
+  font-family: 'Overpass', sans-serif;
+
+  font-size: 23px;
+  font-weight: bold;
+  text-shadow: -2px 2px 0px black;
+
+}
+
+.contenido {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 15px;
+  align-items: start;
+}
+
+.foto {
+  margin-top: 25px;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.texto {
+  font-size: 14px;
+  margin-top: 15px;
+  margin-left: 40px;
+  font-family: 'Phetsarath', sans-serif;
+  color: #2C2C2C;
+}
+
+.cita {
+  font-style: italic;
+  font-size: 16px;
+  text-align: left;
+  margin: 5px 10px;
+  margin-right: 230px;
+  max-width: 100%;
+  padding-right: 0px;
+  font-family: 'Overpass', sans-serif;
+  font-weight: bold;
+}
+
+.disco {
+  width: 100px;
+  border-radius: 6px;
+}
+
+/* SEGUIR LEYENDO Y IMAGEN */
+.pie {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 5px 10px;
+  overflow: visible;
+  margin-top: 30px;
+  width: 100%;
+  /* ancho normal */
+  /* Sacamos los bordes para ponerlos en los pseudo-elementos */
+  border-top: none;
+  border-bottom: none;
+}
+
+.pie::before,
+.pie::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: #E8FF67;
+  left: -100vw;
+  right: -100vw;
+  z-index: -1;
+}
+
+.pie::before {
+  top: 0;
+  /* línea superior */
+}
+
+.pie::after {
+  bottom: 0;
+  /* línea inferior */
+}
+
+.seguir {
+  font-weight: 500;
+  color: #2C2C2C;
+  align-self: center;
+  justify-self: start;
+  margin-left: 230px;
+  font-size: 25px;
+  font-family: 'Overpass', sans-serif;
+
+
+}
+
+.imagen {
+  position: absolute;
+  right: 10px;
+  bottom: -3px;
+  /* flota hacia abajo, justo encima de la línea inferior */
+  width: 200px;
+  border-radius: 6px;
+
+
+}
