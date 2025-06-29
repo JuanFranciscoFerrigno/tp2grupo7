@@ -62,7 +62,6 @@
   position: relative;
   overflow: visible;
 }
-
 .titulo-central::before,
 .titulo-central::after {
   content: "";
@@ -73,18 +72,16 @@
   /* top/bottom 0, left/right expandido */
   z-index: -1;
 }
-
-
 .titulo-central::after {
   bottom: 0;
   top: auto;
 }
-
 .texto-central {
   color: #2C2C2C;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 33px;
   font-family: 'Overpass', sans-serif;
+    font-weight: bold;
 
 }
 
