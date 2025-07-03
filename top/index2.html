@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Registro</title>
+  <link rel="stylesheet" href="ambiente.css">
+   
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Phetsarath&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+</head>
+<body>
+
+  <div class="contenedor-principal">
+
+<div class="linea-con-texto">
+  <div class="linea"></div>
+  <p class="texto-inicial">Te recomendaremos registrarte y así obtener una <br>experiencia única con lo que te gusta</p>
+  <div class="linea"></div>
+</div>
+    <div class="caja-registro">
+
+      <div class="formulario">
+        <div class="form-titulo">Registrarse</div>
+        <input type="email" placeholder="Correo electrónico" class="input">
+        <input type="text" placeholder="Introduce un nombre de usuario" class="input">
+        <input type="password" placeholder="Introduce una contraseña" class="input">
+        <div class="form-link">¿Ya tienes cuenta? <a href="#">Inicia sesión</a></div>
+      </div>
+
+      <div class="contenidos">
+        <div class="form-titulo">Selecciona tus contenidos</div>
+
+        <div class="bloque">
+          <div class="subtitulo">Música</div>
+          <div class="tags">
+            <div class="tag">Latinoamérica +</div>
+            <div class="tag">Norteamérica +</div>
+            <div class="tag">Europa +</div>
+            <div class="tag">Electrónica +</div>
+            <div class="tag">Indie +</div>
+          </div>
+        </div>
+
+        <div class="bloque">
+          <div class="subtitulo">Cine y Series</div>
+          <div class="tags">
+            <div class="tag">Acción +</div>
+            <div class="tag">Aventura +</div>
+            <div class="tag">Comedia +</div>
+            <div class="tag">Fantasía +</div>
+            <div class="tag">Animación +</div>
+            <div class="tag">Documental +</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn-registrarse" onclick="window.location.href='bienvenido.html'">Registrarse</button>
+
+  </div>
+
+  <script>
+    document.querySelectorAll('.tag').forEach(tag => {
+      tag.addEventListener('click', () => {
+        tag.classList.toggle('activo');
+      });
+    });
+  </script>
+</body>
+</html>

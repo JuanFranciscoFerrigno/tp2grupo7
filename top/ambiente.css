@@ -1,0 +1,558 @@
+
+
+
+
+.titulo-comienzo {
+
+  font-family: 'Overpass', sans-serif;
+  font-weight: 700;
+  text-align: left;
+  color: #2C2C2C;
+  font-size: 64px;
+    margin-bottom: 0px;
+}
+
+.texto-comienzo {
+  font-size: 32px;
+  color: #2C2C2C;
+  font-family: 'Overpass', sans-serif;
+  max-width: 2000px;
+  text-align: left;
+  margin-top: 0px;
+  font-weight: bold;
+
+}
+
+.imagen-comienzo {
+  max-width: 500%;
+  height: auto;
+  border-radius: 10px;
+  justify-self: center;
+  margin-top: 70px;
+  margin-bottom: 290px;
+  height: auto;
+    transform: scale(1.9);
+}
+
+/* TOP */
+.top {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  max-width: 100%;
+  margin: 0;
+padding: 0 60px;
+  margin: 0;
+  
+
+}
+
+/* TITULO 1 */
+.titulo-central {
+  display: grid;
+  place-items: center;
+  padding: 10px 20px;
+  margin-top: 30px;
+  position: relative;
+  overflow: visible;
+}
+.titulo-central::before,
+.titulo-central::after {
+  content: "";
+  position: absolute;
+  height: 9px;
+  background: #E8FF67;
+  inset: 0 -9999px;
+  /* top/bottom 0, left/right expandido */
+  z-index: -1;
+}
+.titulo-central::after {
+  bottom: 0;
+  top: auto;
+}
+.texto-central {
+  color: #2C2C2C;
+  font-weight: 500;
+  font-size: 48px;
+  font-family: 'Overpass', sans-serif;
+  font-weight: bold;
+
+}
+
+
+/* TITULO 2 Y TODO SU CONTENIDO */
+.titulo {
+  background-color: #ed51fb;
+  color: white;
+  font-weight: bold;
+  padding: 6px 20px;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 30px;
+
+  font-family: 'Overpass', sans-serif;
+
+  font-size: 40px;
+  font-weight: bold;
+text-shadow: -4px 4px 0px black;
+}
+
+.contenido {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 15px;
+  align-items: start;
+}
+
+.foto {
+  margin-top: 60px;
+  border-radius: 10px;
+  width: 500px;
+  height: 393px;
+  margin-bottom: 60px;
+
+}
+
+.fotoalta {
+  margin-top: 60px;
+  border-radius: 10px;
+  width: 465px;
+  height: 465px;
+  margin-bottom: 60px;
+
+}
+
+.texto {
+  font-size: 32px;
+  margin-top: 50px;
+  margin-left: 40px;
+  margin-bottom: 110px;
+  font-family: 'Phetsarath', sans-serif;
+  color: #2C2C2C;
+}
+
+.cita {
+  font-style: italic;
+  font-size: 36px;
+  text-align: left;
+  margin: 5px 10px;
+  margin-right: 500px;
+  max-width: 100%;
+  padding-right: 0px;
+  font-family: 'Overpass', sans-serif;
+  font-weight: bold;
+}
+
+.disco {
+  width: 100px;
+  border-radius: 6px;
+}
+
+/* SEGUIR LEYENDO Y IMAGEN */
+.piefoto {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 40px 10px; /* aumentamos padding vertical para espacio */
+  overflow: visible;
+  margin-top: 100px;
+  width: 100%;
+  border-top: none;
+  border-bottom: none;
+  
+}
+
+
+
+.seguir {
+  background-color: #00bfff;
+  color: white;
+  font-weight: 500;
+  font-size: 40px;
+  font-family: 'Overpass', sans-serif;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: -4px 4px 0px black;
+  cursor: pointer;
+  justify-self: start;
+  align-self: center;
+  margin-left: 230px;
+  position: relative; /* para estar encima de la línea */
+  z-index: 1;
+  text-shadow: -4px 4px 0px black;
+}
+
+.seguir.centrada {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.pie {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px;
+  overflow: visible;
+  margin-top: 10px;
+  width: 100%;
+  border-top: none;
+  border-bottom: none;
+    max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Imagen decorativa como fondo flotante a la derecha */
+.imagen-fija1 {
+  position: absolute;
+  top: -90px; /* ← SUBILA lo que necesites, podés probar -300px, -400px */
+  right: 20px;
+  width: 303px;
+  height: 303px;
+  border-radius: 6px;
+  z-index: 2;
+  pointer-events: none;
+  background-image: url("imagenes/1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.imagen-fija2 {
+  position: absolute;
+  top: -90px; /* ← SUBILA lo que necesites, podés probar -300px, -400px */
+  right: 20px;
+  width: 303px;
+  height: 303px;
+  border-radius: 6px;
+  z-index: 2;
+  pointer-events: none;
+  background-image: url("imagenes/2.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.imagen-fija3 {
+  position: absolute;
+  top: -90px; /* ← SUBILA lo que necesites, podés probar -300px, -400px */
+  right: 20px;
+  width: 303px;
+  height: 303px;
+  border-radius: 6px;
+  z-index: 2;
+  pointer-events: none;
+  background-image: url("imagenes/3.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.imagen-fija4 {
+  position: absolute;
+  top: -90px; /* ← SUBILA lo que necesites, podés probar -300px, -400px */
+  right: 20px;
+  width: 303px;
+  height: 303px;
+  border-radius: 6px;
+  z-index: 2;
+  pointer-events: none;
+  background-image: url("imagenes/4.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.imagen-fija5 {
+  position: absolute;
+  top: -90px; /* ← SUBILA lo que necesites, podés probar -300px, -400px */
+  right: 20px;
+  width: 303px;
+  height: 303px;
+  border-radius: 6px;
+  z-index: 2;
+  pointer-events: none;
+  background-image: url("imagenes/5.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Línea amarilla centrada, por debajo */
+.pie::after {
+  content: "";
+  position: absolute;
+  height: 9px;
+  background-color: #E8FF67;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+.seguircine.desplegable {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.seguircine {
+  background-color: #00bfff;
+  color: white;
+  font-weight: 500;
+  font-size: 48px;
+  font-family: 'Overpass', sans-serif;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: -4px 4px 0px black;
+  cursor: pointer;
+  justify-self: center;
+  align-self: center;
+  margin-left: 0;
+  position: relative;
+  z-index: 1;
+  text-shadow: -4px 4px 0px black;
+    grid-column: 1 / span 2;
+  justify-self: center;
+  align-self: center;
+  margin-left: 0;
+}
+
+.bloque-expandible {
+  position: relative;
+  min-height: 800px;  /* ← Aumentalo según cuánto subas la imagen */
+  overflow: visible;  /* ← Esto es importante para que no se recorte */
+  padding-top: 100px; /* ← Opcional, ajustalo si querés más margen arriba */
+}
+
+
+.imagen-superpuesta {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  width: 455px;
+  height: 455px;
+  border-radius: 6px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.oculto {
+  border: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important; /* Opcional: si querés fondo transparente */
+  padding: 0; 
+ margin: 0;
+  background-color: #f5f5f5;
+  border: none;
+  font-size: 28px;
+  color: #2C2C2C;
+  font-family: 'Overpass', sans-serif;
+}
+
+.collapse {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.seguir,
+.seguircine {
+  margin-bottom: 10px; /* o el valor que prefieras, incluso 0 */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* REGISTRO */
+.contenedor-principal {
+  background-color: #f3f3f3;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.texto-inicial {
+  margin-bottom: 30px;
+  text-align: center;
+font-size: 30px;
+  color: #434343;
+  font-family: 'Overpass', sans-serif;
+
+}
+
+.caja-registro {
+  display: flex;
+  gap: 40px;
+  padding: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  /* Hace el contenedor invisible */
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+
+.formulario, .contenidos {
+  padding: 20px;
+  width: 300px;
+  border-radius: 15px;
+}
+
+.formulario {
+  border: 2px solid #d4f55d;
+  box-shadow: 0 0 10px #d4f55d88;
+  background-color: white; /* ← AÑADIR ESTA LÍNEA */
+  padding: 20px;
+  width: 600px;
+  border-radius: 15px;
+}
+
+.contenidos {
+  border: 2px solid #e18cff;
+  box-shadow: 0 0 10px #e18cff88;
+  background-color: white; /* ← AÑADIR ESTA LÍNEA */
+  padding: 20px;
+  width: 600px;
+  border-radius: 15px;
+  text-align: center;
+
+}
+
+.form-titulo {
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #000000;
+      margin-top: 30px;
+
+ 
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 26px;
+}
+
+.form-link {
+  text-align: left;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.form-link a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.form-link a:hover {
+  text-decoration: underline;
+}
+
+.subtitulo {
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0;
+  text-align: center;
+  font-size: 28px;
+
+}
+
+.tag {
+  padding: 5px 10px;
+  background-color: #eee;
+  border-radius: 20px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center;
+
+
+}
+
+.tag.activo {
+  background-color: #FF41D6;
+  color: white;
+  font-weight: bold;
+    text-align: center;
+
+}
+
+.btn-registrarse {
+  margin-top: 30px;
+  padding: 15px 150px;
+  background-color: #00e0ff;
+  border: none;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 38px;
+  cursor: pointer;
+  text-shadow: -3px 3px 0px black;
+  box-shadow: 3px 3px 0px black;
+  transition: transform 0.2s;
+}
+
+.btn-registrarse:hover {
+  transform: translateY(-2px);
+}
+
+.linea-con-texto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.linea-con-texto .linea {
+  flex: 1;
+  height: 1px;
+  background-color: #999;
+  opacity: 0.6;
+}
+
+.linea-con-texto .texto-inicial {
+  margin: 0;
+  white-space: nowrap;
+  font-size: 14px;
+  text-align: center;
+  padding: 0 10px;
+}
